@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Alata;
+}
+h1,h2,h3.h4{
+    font-family:Josefin;
+}
+
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --VeryDarkGray: hsl(0, 0%, 41%);
+}
+
+  </style>
+
+
+</head>
+
+<body>
+  <header id="header" class="header md:bg-[url('./images/desktop/image-hero.jpg')] bg-[url('./images/mobile/image-hero.jpg')]   text-[--White] md:px-[150px] px-[40px] md:py-6 py-12 md:max-w-[1440px] md:h-[500px]  h-[600px] max-w-[100%] bg-cover" >
+    <nav class="flex justify-between items-center ">
+      <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+     <div class="menu">
+      <img class="cursor-pointer md:hidden" id="menuButton"  src="./images/icon-hamburger.svg" alt="menu">
+      
+      
+
+      <ul class="md:flex gap-4 hidden ">
+        <li class="hover:underline underline-offset-8"><a href="">About</a></li>
+        <li class="hover:underline underline-offset-8"><a href="">Careers</a></li>
+        <li class="hover:underline underline-offset-8"><a href="">Events</a></li>
+        <li class="hover:underline underline-offset-8"><a href="">Products</a></li>
+        <li class="hover:underline underline-offset-8"><a href="">Support</a></li>
+      </ul>
+     </div>
+    </nav>
+    <div class="flex justify-center items-center md:justify-start">
+      <h1 class="text-[50px] md:text-[60px] leading-[45px]  md:leading-[55px] md:w-[550px] w-[340px] border-2 uppercase p-2 md:p-6 mt-[150px] ">
+      Immersive experiences that deliver
+    </h1>
+    </div>
+  </header>
+  <div id="mobileMenu" class="mobile-menu  md:hidden hidden text-[--White]  py-4 px-10  md:hidden bg-[--Black] w-[100%] h-[600px] ml-[0] mr-[0]">
+    <div class="logo pb-10 flex justify-between"><img src="./images/logo.svg" alt="logo">
+      <img class="cursor-pointer" id="closeButton"  src="./images/icon-close.svg" alt="close">
+    </div>
+  <ul class=" gap-4  text-[25px] ">
+    <li class="hover:underline underline-offset-8 "><a href="">About</a></li>
+    <li class="hover:underline underline-offset-8"><a href="">Careers</a></li>
+    <li class="hover:underline underline-offset-8"><a href="">Events</a></li>
+    <li class="hover:underline underline-offset-8"><a href="">Products</a></li>
+    <li class="hover:underline underline-offset-8"><a href="">Support</a></li>
+  </ul>
+  </div>
+  <main>
+    <div class="hero text-center flex flex-col  md:flex-row justify-center items-center ">
+<div class="hero-img py-20 px-[20px]">
+  <img src="./images/mobile/image-interactive.jpg" alt="">
+</div>
+<div class="hero-text bg-[--White] md:w-[650px]  md:h-[400px] md:ml-[-150px] md:mt-[200px] p-6 flex flex-col justify-center items-center ">
+  <h2 class="uppercase leading-[40px] leading-[50px] text-[--Black] text-[40px] md:text-[50px] w-[450px] md:text-start">The leader in interactive VR</h2>
+  <p class="leading-[30px] pt-6 w-[350px] md:w-[450px] text-center md:text-start text-[--VeryDarkGray]">
+    Founded in 2011, Loopstudios has been producing world-class virtual reality 
+    projects for some of the best companies around the globe. Our award-winning 
+    creations have transformed businesses through digital experiences that bind 
+    to their brand.
+  </p>
+</div>
+    </div>
+    <div class="promotion uppercase flex justify-center md:justify-between md:px-[150px] py-12 ">
+      <h3 class="text-4xl">Our creations</h3>
+      <button class="hidden md:flex border-2 px-10 py-1 border-[--VeryDarkGray] hover:text-[--White] hover:bg-[--Black]">See all</button>
+    </div>
+    <div class="photo-gellary uppercase flex flex-col md:grid md:grid-rows-2 md:grid-cols-4 justify-center items-center  gap-3 px-[20px] md:px-[150px] pb-20">
+      <div class="img relative  md:w-[250px] hover:contrast-50 cursor-pointer">
+        <img class="hidden md:block" src="./images/desktop/image-deep-earth.jpg" alt="deep-earth.jpg" class="desktop">
+        <img class="md:hidden" src="./images/mobile/image-deep-earth.jpg" alt="deep-earth.jpg" class="mobile">
+        <h4 class="text-[--White] text-2xl md:text-3xl md:w-[100px] w-[100px] md:mt-[-100px] mt-[-70px] ml-[20px] md:ml-[40px] z-10 absolute">Deep earth</h4>
+      </div>
+      <div class="img md:w-[250px] hover:contrast-50 cursor-pointer">
+        <img class="hidden md:block" src="./images/desktop/image-night-arcade.jpg" alt="night-arcade.jpg" class="desktop">
+        <img class="md:hidden" src="./images/mobile/image-night-arcade.jpg" alt="night-arcade.jpg" class="mobile">
+        <h4 class="text-[--White] text-2xl md:text-3xl md:w-[100px] w-[100px] md:mt-[-100px] mt-[-70px] ml-[20px] md:ml-[40px] z-10 absolute">Night arcade</h4>
+      </div>
+      <div class="img md:w-[250px] hover:contrast-50 cursor-pointer">
+        <img class="hidden md:block" src="./images/desktop/image-soccer-team.jpg" alt="soccer-team.jpg" class="desktop">
+        <img class="md:hidden" src="./images/mobile/image-soccer-team.jpg" alt="soccer-team.jpg" class="mobile">
+        <h4 class="text-[--White] text-2xl md:text-3xl w-[150px] md:mt-[-100px] mt-[-70px] ml-[20px] md:ml-[40px] z-10 absolute"> Soccer team VR</h4>
+      </div>
+      <div class="img md:w-[250px] hover:contrast-50 cursor-pointer">
+        <img class="hidden md:block" src="./images/desktop/image-grid.jpg" alt="grid.jpg" class="desktop">
+        <img class="md:hidden" src="./images/mobile/image-grid.jpg" alt="grid.jpg" class="mobile">
+        <h4 class="text-[--White] text-2xl md:text-3xl md:w-[100px] w-[100px] md:mt-[-100px] mt-[-70px] ml-[20px] md:ml-[40px] z-10 absolute">The grid</h4>
+      </div>
+      <div class="img md:w-[250px] hover:contrast-50 cursor-pointer">
+        <img class="hidden md:block" src="./images/desktop/image-from-above.jpg" alt="from-above.jpg" class="desktop">
+        <img class="md:hidden" src="./images/mobile/image-from-above.jpg" alt="from-above.jpg" class="mobile">
+        <h4 class="text-[--White] text-2xl md:text-3xl  w-[150px] md:mt-[-100px] mt-[-70px] ml-[20px] md:ml-[40px] z-10 absolute">From up above VR</h4>
+      </div>
+      <div class="img md:w-[250px] hover:contrast-50 cursor-pointer">
+        <img class="hidden md:block" src="./images/desktop/image-pocket-borealis.jpg" alt="pocket-borealis.jpg" class="desktop">
+        <img class="md:hidden" src="./images/mobile/image-pocket-borealis.jpg" alt="pocket-borealis.jpg" class="mobile">
+        <h4 class="text-[--White] text-2xl md:text-3xl w-[100px] md:mt-[-100px] mt-[-70px] ml-[20px] md:ml-[40px] z-10 absolute">Pocket borealis</h4>
+      </div>
+      <div class="img md:w-[250px] hover:contrast-50 cursor-pointer">
+        <img class="hidden md:block" src="./images/desktop/image-curiosity.jpg" alt="curiosity.jpg" class="desktop">
+        <img class="md:hidden" src="./images/mobile/image-curiosity.jpg" alt="curiosity.jpg" class="mobile">
+        <h4 class="text-[--White] text-2xl md:text-3xl w-[100px] md:mt-[-100px] mt-[-70px] ml-[20px] md:ml-[40px] z-10 absolute">The curiosity</h4>
+      </div>
+      <div class="img md:w-[250px] hover:contrast-50 cursor-pointer">
+        <img class="hidden md:block" src="./images/desktop/image-fisheye.jpg" alt="fisheye.jpg" class="desktop">
+        <img class="md:hidden" src="./images/mobile/image-fisheye.jpg" alt="fisheye.jpg" class="mobile">
+        <h4 class="text-[--White] text-2xl md:text-3xl  w-[150px] md:mt-[-100px] mt-[-70px] ml-[20px] md:ml-[40px] z-10 absolute">Make it fisheye</h4>
+      </div>
+    </div>
+  </main>
+  <footer class="flex md:justify-between flex-col md:flex-row justify-center items-center gap-4  md:px-[150px] py-12 bg-[--Black] text-[--White]">
+    <div class="text-center ">
+      <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+     <div class="menu">
+     
+      <ul class="md:flex gap-4 py-4 ">
+        <li class="hover:underline underline-offset-8"><a href="">About</a></li>
+        <li class="hover:underline underline-offset-8"><a href="">Careers</a></li>
+        <li class="hover:underline underline-offset-8"><a href="">Events</a></li>
+        <li class="hover:underline underline-offset-8"><a href="">Products</a></li>
+        <li class="hover:underline underline-offset-8"><a href="">Support</a></li>
+      </ul>
+     </div>
+    </div>
+    <div class="foter-icon md:text-end text-center">
+      <div class="icons">
+        <ion-icon class=" p-2  text-3xl hover:border-b-2 hover:cursor-pointer" name="logo-facebook"></ion-icon>
+        <ion-icon class=" p-2  text-3xl hover:border-b-2 hover:cursor-pointer" name="logo-twitter"></ion-icon>
+        <ion-icon class=" p-2  text-3xl hover:border-b-2 hover:cursor-pointer" name="logo-pinterest"></ion-icon>
+        <ion-icon class=" p-2  text-3xl hover:border-b-2 hover:cursor-pointer" name="logo-instagram"></ion-icon>
+
+      </div>
+      <div class="pera">
+        <p class="text-[--DarkGray]"> © 2024 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+  const menuButton = document.getElementById('menuButton');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeButton = document.getElementById('closeButton');
+const header = document.getElementById('header');
+
+menuButton.addEventListener('click', ()=>{
+    header.style.display = 'none';
+    mobileMenu.style.display = 'block';
+})
+closeButton.addEventListener('click', ()=>{
+    header.style.display = 'block';
+    mobileMenu.style.display = 'none';
+})
+</script>
+</body>
+
+</html>
